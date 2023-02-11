@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+Sito web The Acid Eye con Next.js e Netlify CMS per la gestione eventi.
