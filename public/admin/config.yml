@@ -1,0 +1,23 @@
+backend:
+  name: test-repo #git-gateway 
+  branch: main # Branch to update (optional; defaults to master)
+media_folder: public/img
+public_folder: img
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+    - label: "Eventi"
+      name: "Eventi"
+      file: "content/eventi.md"
+      fields:
+        - { label: "Title", name: "title", widget: "string"}
+        - { label: "Publish Date", name: "date", widget: "datetime" }
+        - { label: "Body", name: "body", widget: "markdown"}
+        - label: 'Eventi'
+          name: "Eventi"
+          widget: list
+          fields:
+            - { label: "Descrizione", name: "Descrizione", widget: "string"}
+            - { label: "luogo", name: "luogo", widget: "text"}
+            - { label: "Data", name: "data", widget: "datetime" }
