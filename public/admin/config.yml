@@ -21,3 +21,4 @@ collections:
             - { label: "Descrizione", name: "Descrizione", widget: "string"}
             - { label: "luogo", name: "luogo", widget: "text"}
             - { label: "Data", name: "data", widget: "datetime" }
+            - { label: "Locandina", name: "locandina", widget: "image"}

@@ -12,8 +12,9 @@ export default function Home() {
 
       <main>
         <h1 className={styles.title}>
-          Home Page
+          The Acid Eye
         </h1>
+        <h2 className={styles.description}>Home Page</h2>
         <Link href="eventi">Eventi</Link>
       </main>
     </div>
