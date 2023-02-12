@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 import Link from "next/link";
 import { Component } from 'react'
 import { attributes, react as EventiContent } from '../content/eventi.md';
-import Image from "next/image";
+
 
 
 /*
@@ -38,12 +38,6 @@ export default class Evento extends Component {
             <p>{result[0].location}</p>
             <p>{result[0].date}</p>
             <p>{result[0].locandina}</p>
-            <Image 
-            loader={myLoader}
-            src= "result[0].locandina"
-            width={500}
-            height={500}
-            />
             </>
         );
     }
