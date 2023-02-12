@@ -3,6 +3,9 @@ import styles from '../styles/Home.module.css';
 import Link from "next/link";
 import { Component } from 'react'
 import { attributes, react as EventiContent } from '../content/eventi.md';
+import Image from "next/image";
+
+
 /*
 export function getClosestEvent(){
     let {title, eventi} = attributes;
@@ -25,13 +28,22 @@ export default class Evento extends Component {
         return c-d;
         });
 
+        const myLoader = ({ src }) => {
+            return result[0].locandina
+          }
+
         return(
             <>
             <p>{result[0].description}</p>
             <p>{result[0].location}</p>
             <p>{result[0].date}</p>
             <p>{result[0].locandina}</p>
-            
+            <Image 
+            loader={myLoader}
+            src= "result[0].locandina"
+            width={500}
+            height={500}
+            />
             </>
         );
     }

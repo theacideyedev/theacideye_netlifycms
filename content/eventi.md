@@ -13,6 +13,6 @@ eventi:
   - description: 'Evento3'
     location:
     date: 'Sun Feb 15 2023 16:39:14 GMT+0100 (Ora standard dell’Europa centrale)'
-    locandina:
+    locandina: '/img/locandina.webp'
 ---
 Qui puoi trovare tutti gli eventi/concerti:
