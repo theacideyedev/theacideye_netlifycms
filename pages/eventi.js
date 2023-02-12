@@ -23,8 +23,8 @@ export default class Eventi extends Component {
                     <ul>
                         {eventi.map((evento, k) => (
                             <li key={k}>
-                                <h2>{evento.description}</h2>
-                                <p>{evento.luogo}</p>
+                                <h2>{evento.description}</h2>                                
+                                <p>{evento.locandina}</p>
                                 <p>{evento.date}</p>
                             </li>
                         ))}
