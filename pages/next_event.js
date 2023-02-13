@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.css';
 import Link from "next/link";
 import { Component } from 'react'
 import { attributes, react as EventiContent } from '../content/eventi.md';
-import Image from "next/image";
+
 
 
 
@@ -44,7 +44,7 @@ export default class Evento extends Component {
             <p>Orario</p>
             <p>{new Date(result[0].date).getHours()}</p>
             <p>{new Date(result[0].date).getMinutes()}</p>
-            <Image src={ "/../public/" + result[0].locandina } width={500} height={500} ></Image>
+            <img src={ result[0].locandina } width={500} height={500} ></img>
             </>
         );
     }
