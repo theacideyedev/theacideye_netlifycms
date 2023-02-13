@@ -14,7 +14,6 @@ eventi:
     location: null
     date: Sun Feb 15 2023 16:39:14 GMT+0100 (Ora standard dell’Europa centrale)
     locandina: /img/locandina.webp
-Eventi:
   - date: 2023-02-15T09:25:17.380Z
     description: Evento1 inserito da CMS
     location: https://goo.gl/maps/uN9VSMfY7jNEmoQW9
