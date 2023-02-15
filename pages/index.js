@@ -7,6 +7,8 @@ import Menu from '/pages/components/menu.js'
 import Footer from '/pages/components/footer.js'
 import Header from './components/header';
 
+
+
 export default class Home extends Component {
   render() {
     return (

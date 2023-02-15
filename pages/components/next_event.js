@@ -3,6 +3,7 @@ import styles from '/styles/Home.module.css';
 import Link from "next/link";
 import { Component } from 'react'
 import { attributes, react as EventiContent } from '/content/eventi.md';
+import Zoom from "next-image-zoom";
 
 
 export default class Evento extends Component {
@@ -33,7 +34,10 @@ export default class Evento extends Component {
                 <dt>Orario</dt>
                 <dd>{new Date(result[0].date).getHours()}:{new Date(result[0].date).getMinutes()}</dd>
             </dl>
-            <img src={ result[0].locandina } width={500} height={500}></img>
+            <div >
+                <Zoom src={"/"+ result[0].locandina} layout={"fixed"} width={200} height={200}/>
+            </div>
+            {/*<img src={ result[0].locandina } width={500} height={500}></img>*/}
             </>
         );
     }
