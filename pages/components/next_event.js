@@ -5,16 +5,6 @@ import { Component } from 'react'
 import { attributes, react as EventiContent } from '/content/eventi.md';
 
 
-
-
-/*
-export function getClosestEvent(){
-    let {title, eventi} = attributes;
-    const today = new Date();
-    let result = eventi.filter(evento => evento.date > today);
-    return result;
-}*/
-
 export default class Evento extends Component {
     render() {   
         let {title, eventi} = attributes;
@@ -37,14 +27,13 @@ export default class Evento extends Component {
             <>
             <p>{result[0].description}</p>
             <Link href={result[0].location}>Clicca qui per vedere la location</Link>
-            <p>Data</p>
-            <p>{new Date(result[0].date).getDate()}</p>
-            <p>{new Date(result[0].date).getMonth()+1}</p>
-            <p>{new Date(result[0].date).getFullYear()}</p>
-            <p>Orario</p>
-            <p>{new Date(result[0].date).getHours()}</p>
-            <p>{new Date(result[0].date).getMinutes()}</p>
-            <img src={ result[0].locandina } width={500} height={500} ></img>
+            <dl>
+                <dt>Data</dt>
+                <dd>{new Date(result[0].date).getDate()}/{new Date(result[0].date).getMonth()+1}/{new Date(result[0].date).getFullYear()}</dd>
+                <dt>Orario</dt>
+                <dd>{new Date(result[0].date).getHours()}:{new Date(result[0].date).getMinutes()}</dd>
+            </dl>
+            <img src={ result[0].locandina } width={500} height={500}></img>
             </>
         );
     }

@@ -5,6 +5,7 @@ import { Component } from 'react'
 import { attributes, react as EventiContent } from '../content/eventi.md';
 import Menu from '/pages/components/menu.js'
 import Footer from '/pages/components/footer.js'
+import Header from "./components/header";
 
 
 export default class Eventi extends Component {
@@ -16,11 +17,9 @@ export default class Eventi extends Component {
                     <title>The Acid Eye</title>
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
+                <Header title="Eventi" />
                 <Menu />
                 <main>
-                    <h1 className={styles.title}>
-                        Eventi
-                    </h1>
                     <EventiContent />
                     <ul>
                         {eventi.map((evento, k) => (

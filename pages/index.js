@@ -5,6 +5,7 @@ import { Component } from 'react'
 import Next_Event from '/pages/components/next_event.js';
 import Menu from '/pages/components/menu.js'
 import Footer from '/pages/components/footer.js'
+import Header from './components/header';
 
 export default class Home extends Component {
   render() {
@@ -19,11 +20,10 @@ export default class Home extends Component {
           <title>The Acid Eye</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
+        <Header title="Home Page"/>
         <Menu/>
         <main>
-          <div className={styles.firstpage}>
-            <h1 className={styles.title}>The Acid Eye</h1>
-            <h2 className={styles.description}>Home Page</h2>          
+          <div className={styles.firstpage}>          
             <p>Prossimo evento</p>          
           </div>
           <Next_Event />

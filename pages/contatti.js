@@ -5,6 +5,7 @@ import { Component } from 'react';
 import Menu from '/pages/components/menu.js';
 import LinkSocial from '/pages/components/linksocial.js';
 import Footer from '/pages/components/footer.js'
+import Header from './components/header';
 
 
 export default class Home extends Component {
@@ -15,15 +16,12 @@ export default class Home extends Component {
                     <title>The Acid Eye</title>
                     <link rel="icon" href="/favicon.ico" />
                 </Head>
+                <Header title="Contatti" />
                 <Menu />
                 <main>
-                    <h1 className={styles.title}>
-                        The Acid Eye
-                    </h1>
-                    <h2 className={styles.description}>Contatti</h2>
-                    <LinkSocial/>
+                    <LinkSocial />
                 </main>
-                <Footer/>
+                <Footer />
             </div>
         );
     }
