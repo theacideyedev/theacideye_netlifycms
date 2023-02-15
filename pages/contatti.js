@@ -2,8 +2,9 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Link from 'next/link';
 import { Component } from 'react';
-import Menu from '/pages/menu.js';
-import LinkSocial from './linksocial.js';
+import Menu from '/pages/components/menu.js';
+import LinkSocial from '/pages/components/linksocial.js';
+import Footer from '/pages/components/footer.js'
 
 
 export default class Home extends Component {
@@ -22,6 +23,7 @@ export default class Home extends Component {
                     <h2 className={styles.description}>Contatti</h2>
                     <LinkSocial/>
                 </main>
+                <Footer/>
             </div>
         );
     }

@@ -3,7 +3,8 @@ import styles from '../styles/Home.module.css';
 import Link from "next/link";
 import { Component } from 'react'
 import { attributes, react as EventiContent } from '../content/eventi.md';
-import Menu from '/pages/menu.js'
+import Menu from '/pages/components/menu.js'
+import Footer from '/pages/components/footer.js'
 
 
 export default class Eventi extends Component {
@@ -28,17 +29,17 @@ export default class Eventi extends Component {
                                 <Link href={evento.location}>Clicca qui per vedere la location</Link>
                                 <p>Data</p>
                                 <p>{new Date(evento.date).getDate()}</p>
-                                <p>{new Date(evento.date).getMonth()+1}</p>
+                                <p>{new Date(evento.date).getMonth() + 1}</p>
                                 <p>{new Date(evento.date).getFullYear()}</p>
                                 <p>Orario</p>
                                 <p>{new Date(evento.date).getHours()}</p>
                                 <p>{new Date(evento.date).getMinutes()}</p>
-                                <img src={evento.locandina} width={500} height={500}/>
+                                <img src={evento.locandina} width={500} height={500} />
                             </li>
                         ))}
                     </ul>
                 </main>
-
+                <Footer />
             </div>
         );
     }
