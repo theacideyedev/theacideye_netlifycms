@@ -14,6 +14,7 @@ export default class Band extends Component {
                 <Head>
                     <title>The Acid Eye</title>
                     <link rel="icon" href="/favicon.ico" />
+                    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'></link>
                 </Head>
                 <Header title="La Band" />
                 <Menu />

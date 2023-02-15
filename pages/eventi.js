@@ -16,6 +16,7 @@ export default class Eventi extends Component {
                 <Head>
                     <title>The Acid Eye</title>
                     <link rel="icon" href="/favicon.ico" />
+                    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'></link>
                 </Head>
                 <Header title="Eventi" />
                 <Menu />
@@ -26,13 +27,12 @@ export default class Eventi extends Component {
                             <li key={k}>
                                 <h2>{evento.description}</h2>
                                 <Link href={evento.location}>Clicca qui per vedere la location</Link>
-                                <p>Data</p>
-                                <p>{new Date(evento.date).getDate()}</p>
-                                <p>{new Date(evento.date).getMonth() + 1}</p>
-                                <p>{new Date(evento.date).getFullYear()}</p>
-                                <p>Orario</p>
-                                <p>{new Date(evento.date).getHours()}</p>
-                                <p>{new Date(evento.date).getMinutes()}</p>
+                                <dl>
+                                    <dt>Data</dt>
+                                    <dd>{new Date(evento.date).getDate()}/{new Date(evento.date).getMonth() + 1}/{new Date(evento.date).getFullYear()}</dd>
+                                    <dt>Orario</dt>
+                                    <dd>{new Date(evento.date).getHours()}:{new Date(evento.date).getMinutes()}</dd>
+                                </dl>
                                 <img src={evento.locandina} width={500} height={500} />
                             </li>
                         ))}

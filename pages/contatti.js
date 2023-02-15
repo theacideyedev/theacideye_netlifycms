@@ -15,6 +15,7 @@ export default class Home extends Component {
                 <Head>
                     <title>The Acid Eye</title>
                     <link rel="icon" href="/favicon.ico" />
+                    <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'></link>
                 </Head>
                 <Header title="Contatti" />
                 <Menu />

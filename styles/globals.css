@@ -1,0 +1,59 @@
+:root{
+    --backgroundcolor: #252525;
+    --textcolor: white;
+    --linkcolor: #b1b1b1
+}
+
+body{
+    
+    background-color: var(--backgroundcolor);
+    color: var(--textcolor);
+    text-align: center; 
+    font-family: 'Josefin Sans';
+}
+
+nav{
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+    display: inline;
+    line-height: 1.5em;
+}
+
+
+dt{
+    margin-right: 1em;
+    float: left;
+    width: 50%;    
+    text-align: center;
+    margin: auto;
+    line-height: 1.5em;
+}
+
+dd{
+    text-align: center;
+    margin: auto;
+    line-height: 1.5em;
+}
+
+a{
+    color: var(--linkcolor);
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+
+footer{
+    padding: 2em;
+    text-align: center;
+}

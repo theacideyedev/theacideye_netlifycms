@@ -10,28 +10,20 @@ import Header from './components/header';
 export default class Home extends Component {
   render() {
     return (
-      <>
-      <div className={styles.background}>
-        <div className={styles.blurback}></div>
-      </div>
-      <div className={styles.page}>
       <div className={styles.container}>
         <Head>
           <title>The Acid Eye</title>
           <link rel="icon" href="/favicon.ico" />
+          <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'></link>
         </Head>
         <Header title="Home Page"/>
         <Menu/>
-        <main>
-          <div className={styles.firstpage}>          
-            <p>Prossimo evento</p>          
-          </div>
+        <main>    
+            <h3>Prossimo evento</h3>  
           <Next_Event />
         </main>
         <Footer/>
       </div>
-      </div>
-      </>
     );
   }
 }
