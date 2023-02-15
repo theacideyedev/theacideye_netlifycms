@@ -11,7 +11,6 @@ module.exports = {
         return cfg;
     },
     images: {
-        loader: 'akamai',
-        path: '',
+        unoptimized: true,
       }
 }
