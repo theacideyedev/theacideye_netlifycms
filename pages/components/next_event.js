@@ -35,7 +35,7 @@ export default class Evento extends Component {
                 <dd>{new Date(result[0].date).getHours()}:{new Date(result[0].date).getMinutes()}</dd>
             </dl>
             <div >
-                <Zoom src={"/"+ result[0].locandina} layout={"fixed"} width={200} height={200}/>
+                <Zoom src={"/"+ result[0].locandina} layout={"fixed"} width={200} height={200} backgroundColor={"#252525"}/>
             </div>
             {/*<img src={ result[0].locandina } width={500} height={500}></img>*/}
             </>
