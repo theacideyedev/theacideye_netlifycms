@@ -12,17 +12,17 @@ export default class Eventi extends Component {
     render() {
         let { title, eventi } = attributes;
         return (
-            <div className={styles.container}>
+            <div>
                 <Head>
                     <title>The Acid Eye</title>
-                    <link rel="icon" href="/favicon.ico" />
+                    <link rel="icon" href="/img/logo.ico" />
                     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'></link>
                 </Head>
                 <Header title="Eventi" />
                 <Menu />
                 <main>
                     <EventiContent />
-                    <ul>
+                    <ul id="eventi">
                         {eventi.map((evento, k) => (
                             <li key={k}>
                                 <h2>{evento.description}</h2>

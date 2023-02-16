@@ -15,7 +15,7 @@ export default class Home extends Component {
       <div className={styles.container}>
         <Head>
           <title>The Acid Eye</title>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/img/logo.ico" />
           <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'></link>
         </Head>
         <Header title="Home Page"/>

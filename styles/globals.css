@@ -1,11 +1,10 @@
 :root{
     --backgroundcolor: #252525;
     --textcolor: white;
-    --linkcolor: #b1b1b1
+    --linkcolor: #b1b1b1;
 }
 
-body{
-    
+body{    
     background-color: var(--backgroundcolor);
     color: var(--textcolor);
     text-align: center; 
@@ -21,7 +20,6 @@ ul{
     display: inline;
     line-height: 1.5em;
 }
-
 
 dt{
     margin-right: 1em;
@@ -42,6 +40,16 @@ a{
     color: var(--linkcolor);
 }
 
+#eventi li{
+    padding-bottom: 3em;
+    /*border-bottom: 1px solid white;*/
+}
+
+.evento{
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 img{
     width: 200px;
@@ -49,10 +57,31 @@ img{
     text-align: center;
 }
 
+header h1{
+    background-image: url("/img/logo.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-indent: -999em;
+    line-height: 1.5em;
+    font-size: 10em;
+    margin-bottom: 0;
+    transition-property: height;
+    transition: 300ms;
+    transition-timing-function: ease-out;
+}
 
-
-
-
+/*logo on top quando faccio scroll*/
+.fixedTop {
+    
+    width: 100%;
+    font-size: 5em;
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    background-color: #252525;
+    
+}
 
 footer{
     padding: 2em;
