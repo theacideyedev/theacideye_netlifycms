@@ -19,4 +19,3 @@ eventi:
     location: https://goo.gl/maps/uN9VSMfY7jNEmoQW9
     locandina: img/locandina.webp
 ---
-Qui puoi trovare tutti gli eventi/concerti:

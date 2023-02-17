@@ -28,13 +28,11 @@ export default class Evento extends Component {
             <>
             <p>{result[0].description}</p>
             <Link href={result[0].location}>Clicca qui per vedere la location</Link>
-            <dl>
-                <dt>Data</dt>
-                <dd>{new Date(result[0].date).getDate()}/{new Date(result[0].date).getMonth()+1}/{new Date(result[0].date).getFullYear()}</dd>
-                <dt>Orario</dt>
-                <dd>{new Date(result[0].date).getHours()}:{new Date(result[0].date).getMinutes()}</dd>
-            </dl>
-            <div >
+            <ul>
+                <li>{new Date(result[0].date).getDate()}/{new Date(result[0].date).getMonth()+1}/{new Date(result[0].date).getFullYear()}</li>
+                <li>{new Date(result[0].date).getHours()}:{new Date(result[0].date).getMinutes()}</li>
+            </ul>
+            <div>
                 <Zoom src={"/"+ result[0].locandina} layout={"fixed"} width={200} height={200} backgroundColor={"#252525"}/>
             </div>
             {/*<img src={ result[0].locandina } width={500} height={500}></img>*/}

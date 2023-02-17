@@ -16,22 +16,20 @@ export default function Header(props) {
     }, []);
 
     const isSticky = () => {
-      console.log(window.scrollY);
-      if(window.scrollY != 0){
-        setSticky("fixedTop");
-        
-      }else{
-        setSticky("");
+      console.log("ayo");
+      if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+        document.getElementById("sticky").style.fontSize = "4em";
+      } else {
+        document.getElementById("sticky").style.fontSize = "8em";
       }
-
     };
-    
 
     let title = props["title"];
     return (
-        <header>
-            <h1 className={sticky}>The Acid Eye</h1>
-            <h2>{title}</h2>
-        </header> 
+        <>
+            <h1 id="sticky">The Acid Eye</h1>
+            <div id="bgheader"><p>placeholder</p></div>
+            <h2 id="h2title">{title}</h2>
+        </> 
     );    
 }

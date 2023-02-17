@@ -29,12 +29,10 @@ export default class Eventi extends Component {
                             <li key={k}>
                                 <h2>{evento.description}</h2>
                                 <Link href={evento.location}>Clicca qui per vedere la location</Link>
-                                <dl>
-                                    <dt>Data</dt>
-                                    <dd>{new Date(evento.date).getDate()}/{new Date(evento.date).getMonth() + 1}/{new Date(evento.date).getFullYear()}</dd>
-                                    <dt>Orario</dt>
-                                    <dd>{new Date(evento.date).getHours()}:{new Date(evento.date).getMinutes()}</dd>
-                                </dl>
+                                <ul>
+                                    <li>{new Date(evento.date).getDate()}/{new Date(evento.date).getMonth() + 1}/{new Date(evento.date).getFullYear()}</li>
+                                    <li>{new Date(evento.date).getHours()}:{new Date(evento.date).getMinutes()}</li>
+                                </ul>
                                 <Zoom src={evento.locandina} layout={"fixed"} width={500} height={500} backgroundColor={"#252525"} />
                             </li>
                         ))}
