@@ -1,27 +1,36 @@
 import styles from '/styles/Home.module.css';
 import Link from "next/link";
 import { Component } from 'react';
-import React, { useRef, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 
 export default function Header(props) {
-    /*useLayoutEffect */
+
+    const [sticky, setSticky] = useState("");
+
     useEffect(() => {
-      const mainHeader = document.getElementById('logo');
-      let fixedTop = 200;
-      const fixedHeader = () => {
-        if (window.pageYOffset > fixedTop) {
-          mainHeader.classList.add('fixedTop');
-        } else {
-          mainHeader.classList.remove('fixedTop');
-        }
+      console.log("hello");
+      window.addEventListener("scroll", isSticky);
+      return () => {
+        window.removeEventListener("scroll", isSticky);
+      };
+    }, []);
+
+    const isSticky = () => {
+      console.log(window.scrollY);
+      if(window.scrollY != 0){
+        setSticky("fixedTop");
+        
+      }else{
+        setSticky("");
       }
-      window.addEventListener('scroll', fixedHeader);
-    }, [])
+
+    };
     
+
     let title = props["title"];
     return (
         <header>
-            <h1 id="logo">The Acid Eye</h1>
+            <h1 className={sticky}>The Acid Eye</h1>
             <h2>{title}</h2>
         </header> 
     );    

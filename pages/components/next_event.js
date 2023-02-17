@@ -25,7 +25,7 @@ export default class Evento extends Component {
           }
 
         return(
-            <div class="evento">
+            <>
             <p>{result[0].description}</p>
             <Link href={result[0].location}>Clicca qui per vedere la location</Link>
             <dl>
@@ -38,7 +38,7 @@ export default class Evento extends Component {
                 <Zoom src={"/"+ result[0].locandina} layout={"fixed"} width={200} height={200} backgroundColor={"#252525"}/>
             </div>
             {/*<img src={ result[0].locandina } width={500} height={500}></img>*/}
-            </div>
+            </>
         );
     }
 }

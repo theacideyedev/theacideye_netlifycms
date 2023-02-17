@@ -11,7 +11,7 @@ import Header from './components/header';
 export default class Home extends Component {
     render() {
         return (
-            <div className={styles.container}>
+            <div>
                 <Head>
                     <title>The Acid Eye</title>
                     <link rel="icon" href="/img/logo.ico" />

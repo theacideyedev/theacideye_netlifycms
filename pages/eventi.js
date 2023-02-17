@@ -6,6 +6,8 @@ import { attributes, react as EventiContent } from '../content/eventi.md';
 import Menu from '/pages/components/menu.js'
 import Footer from '/pages/components/footer.js'
 import Header from "./components/header";
+import Zoom from "next-image-zoom";
+
 
 
 export default class Eventi extends Component {
@@ -33,7 +35,7 @@ export default class Eventi extends Component {
                                     <dt>Orario</dt>
                                     <dd>{new Date(evento.date).getHours()}:{new Date(evento.date).getMinutes()}</dd>
                                 </dl>
-                                <img src={evento.locandina} width={500} height={500} />
+                                <Zoom src={evento.locandina} layout={"fixed"} width={500} height={500} backgroundColor={"#252525"} />
                             </li>
                         ))}
                     </ul>
