@@ -68,7 +68,7 @@ div img {
     background-position: center;
     background-size: contain;
     text-indent: -999em;
-    line-height: 1.5em;
+    line-height: 15em;
     font-size: 8em;
     margin-bottom: 0;
     width: 100%;
@@ -78,8 +78,9 @@ div img {
     transition-property: height;
     position: sticky;
     top: 0;
-    background-color: var(--backgroundcolor);
+    /*background-color: var(--backgroundcolor);*/
     z-index: 2;
+    
 }
 
 #bgheader {
