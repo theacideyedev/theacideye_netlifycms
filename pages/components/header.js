@@ -18,13 +18,14 @@ export default function Header(props) {
     const isSticky = () => {
       console.log("ayo");
       if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+        document.getElementById("bgheader").style.opacity = "0";
         document.getElementById("sticky").style.fontSize = "4em";
         document.getElementById("sticky").style.backgroundColor = "var(--backgroundcolor)";
-        document.getElementById("bgheader").style.backgroundImage = "none";
+        
       } else {
         document.getElementById("sticky").style.fontSize = "8em";
         document.getElementById("sticky").style.backgroundColor = "transparent";
-        document.getElementById("bgheader").style.backgroundImage = 'url("/img/back1.jpg")';
+        document.getElementById("bgheader").style.opacity = '100';
       }
     };
 

@@ -71,9 +71,11 @@ div img {
     line-height: 15em;
     font-size: 8em;
     margin-bottom: 0;
-    width: 100%;
+    width: 100vw;
     height: 2em;
     margin: auto;
+    margin-bottom: 0;
+    margin-top: 0.7em;
     transition-duration: 0.5s;
     transition-property: height;
     position: sticky;
@@ -84,20 +86,23 @@ div img {
 }
 
 #bgheader {
-    background-image: url("/img/back1.jpg");
+    background-image: url("/img/back1.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-indent: -999em;
-    line-height: 15em;
+    line-height: 11em;
     width: 100vw;
     z-index: 1;
     top: 0;
     position: absolute;
+    transition: 0.2s ease-in;
 }
 
 #h2title {
-    padding-top: 2em;
+    /*padding-top: 2em;*/
+    font-size: 2em;
+    margin-top: 0;
 }
 
 /*logo on top quando faccio scroll*/
