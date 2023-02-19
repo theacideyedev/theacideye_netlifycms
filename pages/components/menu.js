@@ -6,11 +6,11 @@ import { Component } from 'react';
 export default class Menu extends Component {
     render() {
         return (
-            <nav>
+            <nav id="menu">
                 <ul>
-                    <li><Link href="/">Home Page</Link></li>
+                    <li><Link href="/">Home</Link></li>
                     <li><Link href="eventi">Eventi</Link></li>
-                    <li><Link href="band">La Band</Link></li>
+                    <li><Link href="band">Band</Link></li>
                     <li><Link href="contatti">Contatti</Link></li>
                 </ul>
             </nav>
