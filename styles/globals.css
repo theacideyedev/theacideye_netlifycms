@@ -100,6 +100,14 @@ div img {
     padding: 1px;
 }
 
+/*link social*/
+#linksocial img{
+    width: 100px;
+    height: 100px;
+    margin-top: 2em;
+    border: none;
+}
+
 #sticky {
     background-image: url("/img/logo.webp");
     background-repeat: no-repeat;

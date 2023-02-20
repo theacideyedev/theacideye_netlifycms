@@ -12,7 +12,7 @@ import Hamburger from './components/hamburger';
 export default class Home extends Component {
   render() {
     return (
-      <div className={styles.container}>
+      <div>
         <Head>
           <title>The Acid Eye</title>
           <link rel="icon" href="/img/logo.ico" />
@@ -22,8 +22,7 @@ export default class Home extends Component {
         {//<Menu/>
         }
         <Hamburger/>
-        <main>    
-            <h3>Prossimo evento</h3>  
+        <main>
           <Next_Event />
         </main>
         <Footer/>
