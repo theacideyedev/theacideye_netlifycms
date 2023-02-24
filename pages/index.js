@@ -15,7 +15,11 @@ export default class Home extends Component {
       <div>
         <Head>
           <title>The Acid Eye</title>
-          <link rel="icon" href="/img/logo.ico" />
+          <meta name='keywords' content=''/>
+          <meta name='description' content=''/>
+          <meta name='author' content='Andrea Longo, Nicola Cecchetto'/>
+          <meta name='viewport' content='width=device-width, initial-scale=1' />
+          <link rel='icon' type='image/ico' href='/img/logo.ico' />
           <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'></link>
         </Head>
         <Header title="Home Page"/>
