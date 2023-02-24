@@ -19,9 +19,10 @@ export default class Home extends Component {
           <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'></link>
         </Head>
         <Header title="Home Page"/>
-        {//<Menu/>
+        <Menu/>
+        
+        {//<Hamburger/>
         }
-        <Hamburger/>
         <main>
           <Next_Event />
         </main>
