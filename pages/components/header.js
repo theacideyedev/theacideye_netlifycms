@@ -17,13 +17,13 @@ export default function Header(props) {
 
     const isSticky = () => {
       console.log("ayo");
-      if(window.matchMedia("(min-width: 992px)").matches){
+      if(window.matchMedia("(min-width: 640px)").matches){
         //sono desktop
         return;
       }
       if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
         document.getElementById("bgheader").style.opacity = "0";
-        document.getElementById("sticky").style.fontSize = "4em";
+        document.getElementById("sticky").style.fontSize = "3em";
         document.getElementById("sticky").style.backgroundColor = "var(--backgroundcolor)";
       } else {
         document.getElementById("sticky").style.fontSize = "8em";

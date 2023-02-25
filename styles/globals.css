@@ -1,4 +1,4 @@
-:root{
+:root {
     --backgroundcolor: #252525;
     --backgroundcolordesktop: #25252589;
     --textcolor: white;
@@ -6,10 +6,10 @@
     --menubgcolor: #118b82;
 }
 
-body{    
+body {
     background-color: var(--backgroundcolor);
     color: var(--textcolor);
-    text-align: center; 
+    text-align: center;
     font-family: 'Josefin Sans';
     overflow-anchor: none;
     padding-bottom: 100px;
@@ -57,7 +57,7 @@ nav {
     background-color: var(--menubgcolor);
 }
 
-ul{
+ul {
     list-style-type: none;
     display: inline;
     line-height: 1.5em;
@@ -80,18 +80,18 @@ dd{
     line-height: 1.5em;
 }*/
 
-a{
+a {
     color: var(--linkcolor);
 }
 
-#eventi>li{
+#eventi>li {
     padding: 1.5em 0em;
     border-bottom: 1px solid white;
     width: 70%;
     margin: auto;
 }
 
-main img{
+main img {
     width: 200px;
     height: 200px;
     text-align: center;
@@ -103,7 +103,7 @@ div img {
 }
 
 /*link social*/
-#linksocial img{
+#linksocial img {
     width: 100px;
     height: 100px;
     margin-top: 2em;
@@ -128,23 +128,23 @@ div img {
     transition-property: height;
     position: sticky;
     top: 0;
-    z-index: 2;    
+    z-index: 2;
 }
 
 #bgheader {
     background-image: url("/img/back1.webp");
     background-repeat: no-repeat;
     background-position: center;
-    background-size:110%;
+    background-size: 110%;
     text-indent: -999em;
-    line-height: 11em;
+    line-height: 17em;
     width: 100%;
     z-index: 1;
     top: 0;
     left: 0;
     position: absolute;
     transition: 0.2s ease-in;
-    mask-image: linear-gradient(to top, rgba(37, 37, 37,0), rgba(37, 37, 37,0.8));
+    mask-image: linear-gradient(to top, rgba(37, 37, 37, 0), rgba(37, 37, 37, 0.8));
 }
 
 #h2title {
@@ -170,48 +170,179 @@ div img {
 /*    z-index: 1;
 /*}*/
 
-footer{
+footer {
     padding: 5em;
     text-align: center;
     padding-bottom: 0;
 }
 
 
+/*prova menu hamburger*/
+#menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 0px;
+}
+
+#menu>ul {
+    display: flex;
+}
+
+#menu .checkbox {
+    /*checkbox serve per fare il click*/
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#menu .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#menu .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+#menu .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+#menu .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+#menu .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+#menu ul {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+    background-color: #252525;
+    z-index: 3;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li {
+    margin-bottom: 1.2rem;
+    line-height: 1.25em;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+#menu li a {
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#menu input[type="checkbox"]:checked~ul {
+    transform: translateX(0);
+}
+
+#menu input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+#menu input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+#menu input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+
+/*fine hamburger*/
+
+
+
 /*DESKTOP*/
-@media screen and (min-width: 992px) {
-    
-    main{
+@media screen and (min-width: 640px) {
+
+    main {
         max-width: 1024px;
         margin-left: auto;
-        margin-right: auto;        
+        margin-right: auto;
     }
 
+    #menu .checkbox {
+        all:unset;
+        display: none;
+    }
+    
+    #menu .hamburger-lines {
+        all:unset;
+        display: none;
+    }
+    #menu{
+        all:inherit;
+    }
+    #menu ul{
+        all:unset;
+    } 
+    #menu li{
+        all:unset;
+    }  
     #menu {
+        list-style: none;
         right: 0;
-        top: 0;        
+        top: 0;
         text-align: center;
         position: fixed;
         margin: auto;
         padding-right: 5%;
         z-index: 2;
-        height: 80px; 
+        height: 80px;
         padding-top: 3em;
     }
-    
+
     #menu ul {
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content:stretch;
+        justify-content: stretch;
     }
-    
+
     #menu a {
         box-sizing: border-box;
         padding: 20px;
         font-size: 1.5em;
     }
 
-    #sticky{
+    #sticky {
         background-image: url("/img/logo.webp");
         background-repeat: no-repeat;
         background-position: 5% 0%;
@@ -222,19 +353,19 @@ footer{
         width: 100%;
         height: 2em;
         margin: auto;
-        margin-bottom: 1em;       
+        margin-bottom: 1em;
         position: sticky;
         top: 0;
         background-color: var(--backgroundcolor);
         z-index: 2;
     }
 
-    #bgheader{
+    #bgheader {
         background-image: url("/img/back1.webp");
         background-repeat: no-repeat;
         background-position: center;
         background-attachment: fixed;
-        background-size:100%;
+        background-size: 100%;
         text-indent: -999em;
         line-height: 55em;
         width: 100%;
@@ -244,8 +375,8 @@ footer{
         mask-image: linear-gradient(to top, rgba(37, 37, 37, 0), rgba(37, 37, 37, 0.21));
     }
 
-    #linksocial{
-        display: inline-flex;        
+    #linksocial {
+        display: inline-flex;
         flex-flow: row;
         flex-wrap: wrap;
         flex-basis: content;
@@ -253,6 +384,11 @@ footer{
         justify-content: space-between;
         width: 70%;
     }
-    
-  }
 
+    
+    #h2title {
+        /*padding-top: 2em;*/
+        font-size: 4em;
+        margin-top: 0;
+    }
+}
