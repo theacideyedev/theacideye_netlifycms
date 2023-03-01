@@ -13,8 +13,8 @@ export default class Band extends Component {
             <div>
                 <Head>
                     <title>Band - The Acid Eye</title>
-                    <meta name='keywords' content=''/>
-                    <meta name='description' content=''/>
+                    <meta name='keywords' content='The Acid Eye, Band, Marco Radin, Andrea Marcon, Ulisse Chimetto, Acid Rock, Vicenza'/>
+                    <meta name='description' content='Tutte le curiosità sulla band The Acid Eye e i suoi componenti.'/>
                     <meta name='author' content='Andrea Longo, Nicola Cecchetto'/>
                     <meta name='viewport' content='width=device-width, initial-scale=1' />
                     <link rel='icon' type='image/ico' href='/img/logo.ico' />
