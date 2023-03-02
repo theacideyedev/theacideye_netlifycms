@@ -25,7 +25,7 @@ export default class Eventi extends Component {
                     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'></link>
                 </Head>
                 <Header title="Eventi" />
-                <Menu />
+                <Menu selected="Eventi"/>
                 <main>
                     <EventiContent />
                     <ul id="eventi">

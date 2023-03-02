@@ -21,7 +21,7 @@ export default class Band extends Component {
                     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'></link>
                 </Head>
                 <Header title="La Band" />
-                <Menu />
+                <Menu selected="Band"/>
                 <main>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna. Dignissim diam quis enim lobortis scelerisque fermentum. Imperdiet massa tincidunt nunc pulvinar. Eu consequat ac felis donec. Blandit volutpat maecenas volutpat blandit. Amet consectetur adipiscing elit ut aliquam purus sit. Tellus id interdum velit laoreet id donec ultrices tincidunt. Amet est placerat in egestas erat imperdiet sed euismod. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
                 </main>

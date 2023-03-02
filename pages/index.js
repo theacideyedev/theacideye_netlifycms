@@ -23,7 +23,7 @@ export default class Home extends Component {
           <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'></link>
         </Head>
         <Header title="Home Page"/>
-        <Menu/>
+        <Menu selected="Home"/>
         
         {//<Hamburger/>
         }

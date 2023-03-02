@@ -65,6 +65,14 @@ ul {
     padding: 0;
 }
 
+.selectedMenu a {
+    text-decoration: none;
+}
+
+.notSelectedMenu a {
+    color:var(--menubgcolor);
+}
+
 /*dt{
     margin-right: 1em;
     float: left;
