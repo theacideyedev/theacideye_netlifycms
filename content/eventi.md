@@ -22,5 +22,9 @@ eventi:
     description: WEILA
     location: ARCADIO
     locandina: img/artboard_copy_231.jpg
+  - date: 2024-02-15T20:00:31.377Z
+    description: TAE333
+    location: "333"
+    locandina: img/artboard_copy_231.jpg
 ---
 E﻿HO
