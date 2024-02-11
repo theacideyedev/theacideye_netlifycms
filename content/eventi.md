@@ -18,4 +18,9 @@ eventi:
     description: Evento4
     location: https://goo.gl/maps/uN9VSMfY7jNEmoQW9
     locandina: img/locandina.webp
+  - date: 2024-02-13T14:00:14.937Z
+    description: WEILA
+    location: ARCADIO
+    locandina: img/locandina.webp
 ---
+E﻿HO
