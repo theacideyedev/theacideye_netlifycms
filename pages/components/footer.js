@@ -8,7 +8,7 @@ export default class Footer extends Component {
         return (
             <footer>
                 <p>The Acid Eye</p>
-                <p>Creato da Andrea Longo & Nicola Cecchetto</p>
+                <p>Developed by Andrea Longo & Nicola Cecchetto</p>
             </footer>            
         );
     }
