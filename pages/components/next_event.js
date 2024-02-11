@@ -37,7 +37,7 @@ export default class Evento extends Component {
                     <Link href={result[0].location}>Clicca qui per vedere la location</Link>
                     <ul>
                         <li>{new Date(result[0].date).getDate()}/{new Date(result[0].date).getMonth() + 1}/{new Date(result[0].date).getFullYear()}</li>
-                        <li>{new Date(result[0].date).getHours()}:{new Date(result[0].date).getMinutes()}</li>
+                        <li>{(new Date(result[0].date).getHours() < 10 ? '0' : '') + new Date(result[0].date).getHours()}:{(new Date(result[0].date).getMinutes() < 10 ? '0' : '') + new Date(result[0].date).getMinutes()}</li>
                     </ul>
                     <div>
                         <Zoom src={"/" + result[0].locandina} layout={"fixed"} width={200} height={200} backgroundColor={"#252525"} />
