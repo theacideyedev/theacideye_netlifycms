@@ -21,6 +21,6 @@ eventi:
   - date: 2024-02-13T14:00:14.937Z
     description: WEILA
     location: ARCADIO
-    locandina: img/locandina.webp
+    locandina: img/artboard_copy_231.jpg
 ---
 E﻿HO
