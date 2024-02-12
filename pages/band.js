@@ -23,7 +23,10 @@ export default class Band extends Component {
                 <Header title="La Band" />
                 <Menu selected="Band"/>
                 <main>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Luctus venenatis lectus magna fringilla urna. Dignissim diam quis enim lobortis scelerisque fermentum. Imperdiet massa tincidunt nunc pulvinar. Eu consequat ac felis donec. Blandit volutpat maecenas volutpat blandit. Amet consectetur adipiscing elit ut aliquam purus sit. Tellus id interdum velit laoreet id donec ultrices tincidunt. Amet est placerat in egestas erat imperdiet sed euismod. Eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada.</p>
+                    <p>The Acid Eye è un gruppo Rock Italiano dalla periferia di Vicenza. Il progetto nasce nel 2020 quando il polistrumentista Jethro Rain incontra e si confronta con il cantante e chitarrista Andrea Marcon e il batterista Ulisse Chimetto.</p>
+                    <p>Questi, accomunati dalla necessità di scrivere musica, decidono di rielaborare il sound psichedelico degli anni '60 e '70 con spunti musicali e testi di matrice contemporanea. La risultante è un Acid Rock in pieno stile Doors influenzato da Blues, Funk, Jazz e molto altro ancora.</p>
+                    <p>Nel 2022 la band inizia a collaborare con il produttore Davide "Dave" Nicolli. Nello stesso anno il loro singolo "See Me Change" vince il primo premio di un importante concorso nazionale che permette loro di esibirsi al Lumen Festival, raggiungendo anche testate giornalistiche e TV locali.</p>
+                    <p>Nel 2023 presentano il loro album di debutto "The Acid Eye" accumulando velocemente migliaia di streams sulle varie piattaforme.</p>
                 </main>
                 <Footer />
             </div>

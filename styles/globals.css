@@ -20,6 +20,11 @@ nav {
     display: block;
 }
 
+main p {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+}
+
 /*#menu { MENU BASSO
     width: 100%;
     margin-left: 0%;
@@ -116,6 +121,7 @@ div img {
     height: 100px;
     margin-top: 2em;
     border: none;
+    border-radius: 20px;
 }
 
 #sticky {
@@ -140,7 +146,7 @@ div img {
 }
 
 #bgheader {
-    background-image: url("/img/back1.webp");
+    /*background-image: url("/img/back1.webp");*/
     background-repeat: no-repeat;
     background-position: center;
     background-size: 110%;
@@ -152,7 +158,7 @@ div img {
     left: 0;
     position: absolute;
     transition: 0.2s ease-in;
-    mask-image: linear-gradient(to top, rgba(37, 37, 37, 0), rgba(37, 37, 37, 0.8));
+    mask-image: linear-gradient(to top, rgba(37, 37, 37, 0), rgb(37, 37, 37));
 }
 
 #h2title {

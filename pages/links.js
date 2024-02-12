@@ -13,7 +13,7 @@ export default class Home extends Component {
         return (
             <div>
                 <Head>
-                    <title>Contatti - The Acid Eye</title>
+                    <title>Links - The Acid Eye</title>
                     <meta name='keywords' content='The Acid Eye, Marco Radin, Andrea Marcon, Ulisse Chimetto, Acid Rock, Band, Vicenza'/>
                     <meta name='description' content='Tutti i link per ascoltare le canzoni di The Acid Eye e per comunicare con la band.'/>
                     <meta name='author' content='Andrea Longo, Nicola Cecchetto'/>
@@ -21,8 +21,8 @@ export default class Home extends Component {
                     <link rel='icon' type='image/ico' href='/img/logo.ico' />
                     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'></link>
                 </Head>
-                <Header title="Contatti" />
-                <Menu  selected="Contatti"/>
+                <Header title="Links" />
+                <Menu  selected="Links"/>
                 <main>
                     <LinkSocial />
                 </main>

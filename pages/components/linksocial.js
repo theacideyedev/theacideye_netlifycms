@@ -9,10 +9,10 @@ export default class LinkSocial extends Component {
         return (
             <nav>
                 <ul id="linksocial">
-                    <li><Link href="https://spoti.fi/3Oytf9f"><Image src='/img/spotify.webp' alt='spotify' width={200} height={200}/><p>Spotify</p></Link></li>
-                    <li><Link href="https://deezer.page.link/LScip8WF1brseApc6"><Image src='/img/deezer.webp' alt='deezer' width={200} height={200}/><p>Deezer</p></Link></li>
-                    <li><Link href="https://youtube.com/channel/UCHmv77Cw9XbXnK_hHzHcLZg"><Image src='/img/youtube.webp' alt='youtube' width={200} height={200}/><p>Youtube</p></Link></li>
-                    <li><Link href="https://bit.ly/InstaTheAcidEye"><Image src='/img/instagram.webp' alt='instagram' width={200} height={200}/><p>Instagram</p></Link></li>
+                    <li><a href="https://open.spotify.com/artist/6ubMuyMbeOZBAjbSyZHUaw" target="_blank"><Image src='/img/spotify.webp' alt='spotify' width={200} height={200}/><p>Spotify</p></a></li>
+                    <li><a href="https://music.apple.com/us/artist/the-acid-eye/1613338561" target="_blank"><Image src='/img/apple-music.png' alt='apple music' width={200} height={200}/><p>Apple Music</p></a></li>
+                    <li><a href="https://youtube.com/channel/UCHmv77Cw9XbXnK_hHzHcLZg" target="_blank"><Image src='/img/youtube.jpeg' alt='youtube' width={200} height={200}/><p>Youtube</p></a></li>
+                    <li><a href="https://bit.ly/InstaTheAcidEye" target="_blank"><Image src='/img/instagram.webp' alt='instagram' width={200} height={200}/><p>Instagram</p></a></li>
                 </ul>
             </nav>
         );

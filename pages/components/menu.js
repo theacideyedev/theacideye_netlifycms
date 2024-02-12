@@ -7,15 +7,15 @@ export default function Menu(props) {
     let menuHome = "notSelectedMenu";
     let menuEventi = "notSelectedMenu";
     let menuBand = "notSelectedMenu";
-    let menuContatti = "notSelectedMenu";
+    let menuLink = "notSelectedMenu";
     if(props["selected"] == "Home")
         menuHome = "selectedMenu";
     if(props["selected"] == "Eventi")
         menuEventi = "selectedMenu";
     if(props["selected"] == "Band")
         menuBand = "selectedMenu";
-    if(props["selected"] == "Contatti")
-        menuContatti = "selectedMenu";  
+    if(props["selected"] == "Links")
+        menuLink = "selectedMenu";  
     return (
         <nav id="menu">
             <input class='checkbox' type='checkbox' name='' id=''/>
@@ -28,7 +28,7 @@ export default function Menu(props) {
                 <li class={menuHome}><Link href="/">Home</Link></li>
                 <li class={menuEventi}><Link href="eventi">Eventi</Link></li>
                 <li class={menuBand}><Link href="band">Band</Link></li>
-                <li class={menuContatti}><Link href="contatti">Contatti</Link></li>
+                <li class={menuLink}><Link href="links">Links</Link></li>
             </ul>
         </nav>
     );

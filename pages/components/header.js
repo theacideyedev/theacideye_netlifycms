@@ -8,7 +8,9 @@ export default function Header(props) {
     const [sticky, setSticky] = useState("");
 
     useEffect(() => {
-      console.log("hello");
+      var n = Math.ceil(Math.random()*6);
+      document.getElementById("bgheader").style.backgroundImage = "url('/img/bg" + n + ".jpeg')";
+      console.log(n);
       window.addEventListener("scroll", isSticky);
       return () => {
         window.removeEventListener("scroll", isSticky);
