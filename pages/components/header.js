@@ -10,7 +10,7 @@ export default function Header(props) {
     useEffect(() => {
       var n = Math.ceil(Math.random()*6);
       document.getElementById("bgheader").style.backgroundImage = "url('/img/bg" + n + ".jpeg')";
-      console.log(n);
+      //console.log(n);
       window.addEventListener("scroll", isSticky);
       return () => {
         window.removeEventListener("scroll", isSticky);
@@ -18,7 +18,7 @@ export default function Header(props) {
     }, []);
 
     const isSticky = () => {
-      console.log("ayo");
+      //console.log("ayo");
       if(window.matchMedia("(min-width: 640px)").matches){
         //sono desktop
         return;

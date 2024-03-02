@@ -27,7 +27,6 @@ export default class Eventi extends Component {
                 <Header title="Eventi" />
                 <Menu selected="Eventi"/>
                 <main>
-                    <EventiContent />
                     <ul id="eventi">
                         {eventi.map((evento, k) => (
                             <li key={k}>
