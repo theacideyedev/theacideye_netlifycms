@@ -7,6 +7,7 @@ import Menu from '/pages/components/menu.js'
 import Footer from '/pages/components/footer.js'
 import Header from './components/header';
 import Hamburger from './components/hamburger';
+import PreMain from "./components/premain";
 
 
 export default class Home extends Component {
@@ -28,6 +29,7 @@ export default class Home extends Component {
         {//<Hamburger/>
         }
         <main>
+          <PreMain />
           <Next_Event />
         </main>
         <Footer/>

@@ -24,10 +24,13 @@ export default class Evento extends Component {
             return result[0].locandina
         }
         if (result.length == 0) {
-            return (
+            /*return (
                 <>
                     <p>Non ci sono eventi in vista</p>
                 </>
+            );*/
+            return (
+                <></>
             );
         } else {
             return (
