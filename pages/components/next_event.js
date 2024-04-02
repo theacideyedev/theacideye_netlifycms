@@ -43,7 +43,9 @@ export default class Evento extends Component {
                         <li>{(new Date(result[0].date).getHours() < 10 ? '0' : '') + new Date(result[0].date).getHours()}:{(new Date(result[0].date).getMinutes() < 10 ? '0' : '') + new Date(result[0].date).getMinutes()}</li>
                     </ul>
                     <div>
-                        <Zoom src={"/" + result[0].locandina} layout={"fixed"} width={200} height={200} backgroundColor={"#252525"} />
+                        {
+                            result[0].locandina != null && <Zoom src={"/" + result[0].locandina} layout={"fixed"} width={200} height={200} backgroundColor={"#252525"} />
+                        }
                     </div>
                     {/*<img src={ result[0].locandina } width={500} height={500}></img>*/}
                 </>

@@ -7,4 +7,3 @@ eventi:
     description: OSTERIA MILES DAVIS
     location: https://maps.app.goo.gl/bX7n5bN8tpEthkfv5
 ---
-E﻿HO
