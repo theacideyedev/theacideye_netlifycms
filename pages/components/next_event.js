@@ -44,7 +44,7 @@ export default class Evento extends Component {
                     </ul>
                     <div>
                         {
-                            result[0].locandina != null && <Zoom src={"/" + result[0].locandina} layout={"fixed"} width={200} height={200} backgroundColor={"#252525"} />
+                            result[0].locandina != "" && <Zoom src={"/" + result[0].locandina} layout={"fixed"} width={200} height={200} backgroundColor={"#252525"} />
                         }
                     </div>
                     {/*<img src={ result[0].locandina } width={500} height={500}></img>*/}
