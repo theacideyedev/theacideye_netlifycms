@@ -38,7 +38,7 @@ export default class Eventi extends Component {
                                     <li>{(new Date(evento.date).getHours() < 10 ? '0' : '') + new Date(evento.date).getHours()}:{(new Date(evento.date).getMinutes() < 10 ? '0' : '') + new Date(evento.date).getMinutes()}</li>
                                 </ul>
                                 {
-                                    evento.locandina != "" && <Zoom src={evento.locandina} layout={"fixed"} width={500} height={500} backgroundColor={"#252525"} />
+                                    (evento.locandina != "" || evento.locandina != null) && <Zoom src={evento.locandina} layout={"fixed"} width={500} height={500} backgroundColor={"#252525"} />
                                 }
                             </li>
                         ))}
