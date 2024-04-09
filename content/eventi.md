@@ -6,5 +6,8 @@ eventi:
     locandina: img/20240302_190752_0000.webp
     description: OSTERIA MILES DAVIS
     location: https://maps.app.goo.gl/bX7n5bN8tpEthkfv5
+  - date: 2024-04-12T17:51:03.900Z
+    description: N'altro evento
+    location: https://maps.app.goo.gl/bX7n5bN8tpEthkfv5
 ---
 .
