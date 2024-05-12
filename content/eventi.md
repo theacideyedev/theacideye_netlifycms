@@ -18,9 +18,9 @@ eventi:
   - date: 2024-05-02T19:00:11.827Z
     description: THE ACID EYE BLUES JAM (REVOLUTION LIVE CLUB)
     location: https://maps.app.goo.gl/U1gunTBgZJPuhoaN9
-  - date: 2024-05-31T19:00:12.129Z
-    description: OSTERIA MUNARI
-    location: https://maps.app.goo.gl/R1m5madEbX9BfrKRA
+  - date: 2024-05-31T20:00:12.129Z
+    description: FESTA DELLA CARETERA
+    location: https://maps.app.goo.gl/XqUJYzfhrBdmErjK6
   - date: 2024-06-06T19:00:12.010Z
     description: THE ACID EYE BLUES JAM (REVOLUTION LIVE CLUB)
     location: https://maps.app.goo.gl/U1gunTBgZJPuhoaN9
