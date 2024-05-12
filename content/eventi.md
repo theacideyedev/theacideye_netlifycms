@@ -21,9 +21,6 @@ eventi:
   - date: 2024-05-31T20:00:12.129Z
     description: FESTA DELLA CARETERA
     location: https://maps.app.goo.gl/XqUJYzfhrBdmErjK6
-  - date: 2024-06-06T19:00:12.010Z
-    description: THE ACID EYE BLUES JAM (REVOLUTION LIVE CLUB)
-    location: https://maps.app.goo.gl/U1gunTBgZJPuhoaN9
   - date: 2024-10-18T19:00:29.953Z
     description: JAMMIN' CLUB
     location: https://maps.app.goo.gl/fssX6cTZwBVYkhGr7
