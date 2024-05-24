@@ -21,6 +21,9 @@ eventi:
   - date: 2024-05-31T20:00:12.129Z
     description: FESTA DELLA CARETERA
     location: https://maps.app.goo.gl/XqUJYzfhrBdmErjK6
+  - date: 2024-06-20T19:00:07.953Z
+    description: THE ACID EYE BLUES JAM (REVOLUTION LIVE CLUB)
+    location: https://maps.app.goo.gl/U1gunTBgZJPuhoaN9
   - date: 2024-08-26T19:30:42.373Z
     description: SAGRA DI CALDOGNO
     location: https://maps.app.goo.gl/bzQrJ14ukboHGfTu6
