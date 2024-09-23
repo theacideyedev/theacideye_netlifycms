@@ -27,8 +27,5 @@ eventi:
   - date: 2024-08-26T19:30:00.000Z
     description: SAGRA DI CALDOGNO
     location: https://maps.app.goo.gl/bzQrJ14ukboHGfTu6
-  - date: 2024-10-18T18:00:29.953Z
-    description: JAMMIN' CLUB
-    location: https://maps.app.goo.gl/fssX6cTZwBVYkhGr7
 ---
 .
